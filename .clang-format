@@ -1,0 +1,17 @@
+# Google C++ Style Guide (format-only), tuned for this skeleton.
+#
+# Two deliberate departures from the stock Google preset, so the provided
+# files' existing look is preserved and students' new code blends in:
+#   * IndentWidth: 4     — the skeleton is written with 4-space indentation.
+#   * SortIncludes: Never — keep the hand-written include order; the skeleton
+#     already follows the guide's "related header first" rule manually.
+#
+# Style is advisory (0 marks). Run `make format` to apply, `make check` to
+# verify. See the README "Style expectations" section.
+#
+# Generated from clang-format 14.0.6; `make check` is advisory, so minor
+# version drift between clang-format 11..18 cannot break a build.
+BasedOnStyle: Google
+IndentWidth: 4
+SortIncludes: Never
+FixNamespaceComments: false

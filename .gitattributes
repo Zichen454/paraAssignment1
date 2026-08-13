@@ -1,0 +1,9 @@
+# Normalize line endings so a Windows student's CRLF checkout does not make
+# every line a formatting diff. `text=auto` applies on renormalization; the
+# explicit `eol=lf` overrides for C++ sources, the Makefile, and Abseil's
+# platform `.inc` implementation files (vendored under abseil/).
+* text=auto
+*.cpp text eol=lf
+*.h   text eol=lf
+*.inc text eol=lf
+Makefile text eol=lf

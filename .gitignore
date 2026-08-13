@@ -1,0 +1,20 @@
+# Claude Code session state (not part of the submission)
+.claude/
+
+# Build artifacts (rule R8.1: not part of the submission)
+build/
+build-cov/
+bin/
+*.o
+*.gcda
+*.gcno
+*.gcov
+
+# Generated outputs (rule R8.1: not part of the submission)
+output.txt
+results.csv
+bench-*.out
+
+# Input datasets are large and must never be committed (rule R8.1)
+data/
+*.dat
