@@ -1,12 +1,16 @@
 #!/bin/bash
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+#SBATCH --job-name=assignment1Draft
+#SBATCH --time=01:00:00
+#SBATCH --exclusive
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=32
+#SBATCH --partition=cascade
+#SBATCH --qos=standard
 
 set -euo pipefail
+
+cd "$SLURM_SUBMIT_DIR"
 
 INPUT="${1:-${INPUT:-data.txt}}"
 THREADS="${THREADS:-1 2 4 8 16 32}"
